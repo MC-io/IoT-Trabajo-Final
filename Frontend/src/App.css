@@ -1,0 +1,222 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.app {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.search-bar {
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  padding: 8px;
+  margin-right: 8px;
+}
+
+.search-bar button {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.video-list {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+}
+
+.video-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.video-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.video-card h3 {
+  margin-top: 8px;
+  font-size: 16px;
+}
+
+
+/* Estilo general */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #111;
+  color: #fff;
+}
+
+/* Título principal */
+.app-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 20px 0;
+  color: #0f9d58;
+  text-shadow: 0px 0px 10px rgba(15, 157, 88, 0.8);
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Tres columnas fijas */
+  gap: 20px; /* Espaciado entre elementos */
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1800px; /* Ancho máximo del contenedor */
+}
+
+/* Item individual de cámara */
+.video-item {
+  background-color: #222;
+  border: 2px solid #333;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.video-item:hover {
+  border-color: #0f9d58;
+}
+
+/* Etiqueta de cámara */
+.camera-label {
+  position: absolute;
+  top: 8px;
+  left: 22px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  color: #fff;
+  z-index: 9999;
+}
+
+/* No videos */
+.no-videos {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #f44336;
+  margin-top: 50px;
+}
+
+/* Contenedor de entrada JSON */
+.json-input-container {
+  margin: 20px auto;
+  text-align: center;
+  max-width: 600px;
+}
+
+.json-input {
+  width: 80%;
+  padding: 10px;
+  border: 2px solid #333;
+  border-radius: 4px;
+  background-color: #111;
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.json-input:focus {
+  outline: none;
+  border-color: #0f9d58;
+}
+
+.process-btn {
+  background-color: #0f9d58;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.process-btn:hover {
+  background-color: #0d7b46;
+}
+.timestamp-list {
+  display: flex; /* Disposición en fila */
+  overflow-x: auto; /* Habilitar desplazamiento horizontal */
+  gap: 10px; /* Espaciado entre botones */
+  padding: 10px;
+  white-space: nowrap; /* Prevenir que los botones salten de línea */
+  scrollbar-width: thin; /* Estilo del scrollbar (para navegadores compatibles) */
+}
+
+.timestamp-btn {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  cursor: pointer;
+  white-space: nowrap; /* Prevenir que el texto se corte */
+  transition: background-color 0.3s;
+}
+
+.timestamp-btn:hover {
+  background-color: #ddd;
+}
+
+.timestamp-btn.active {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  border-color: #007bff;
+}
+
+/* Opcional: Ocultar scrollbars en navegadores modernos */
+.timestamp-list::-webkit-scrollbar {
+  height: 6px; /* Altura del scrollbar */
+}
+.timestamp-list::-webkit-scrollbar-thumb {
+  background: #bbb;
+  border-radius: 3px;
+}
+.timestamp-list::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}

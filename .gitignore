@@ -1,0 +1,32 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+Frontend/node_modules/
+Frontend/.pnp
+.pnp.js
+
+# testing
+Frontend/coverage/
+
+# production
+Frontend/build/
+
+# misc
+Frontend/.DS_Store
+Frontend/.env.local
+Frontend/.env.development.local
+Frontend/.env.test.local
+Frontend/.env.production.local
+
+Frontend/npm-debug.log*
+Frontend/yarn-debug.log*
+Frontend/yarn-error.log*
+
+Backend/venv/
+Backend/VIRAT-DATASET/
+Backend/frames/
+Backend/__pycache__/
+Backend/yolov5s.pt
+Backend/yolov8n.pt
+Backend/god-eyes*
+Backend/firestore.json
